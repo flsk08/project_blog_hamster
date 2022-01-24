@@ -53,6 +53,10 @@
     color: rgba(62, 112, 187, 0.932);
   }
 
+  .sidenav li {
+    list-style-type: none;
+  }
+
   /*.nav-stories {
     font-size: 12px;
     text-transform: uppercase;
@@ -138,41 +142,6 @@
     
   }
 
-  
-  #housing-grid {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto 1fr;
-    grid-template-areas: 
-    "banner"
-    "text";
-  }
-
-  #housing {
-    background-image: url(cage.jpg);
-    background-size: cover;
-    height: 250px;
-    position: sticky;
-    top: 0;
-  }
-
-  #housing h2 {
-    text-transform: uppercase;
-    letter-spacing: 1.5em;
-    border: 3px solid white;
-    padding: 50px;
-    position: relative;
-    top: 70px;
-    width: 390px;
-    margin: 0 auto;
-    grid-area: banner;
-}
-
-#text p {
-  text-align: justify;
-  grid-area: text;
-}
-
 nav,
 nav a {
     font-family: 'Raleway', sans-serif;
@@ -191,4 +160,73 @@ nav li {
 
 nav a:hover {
   background-color:rgba(62, 112, 187, 0.288);
+}
+
+/* housing.html */
+
+#content-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+  "banner"
+  "text";
+}
+
+.housing-banner {
+  background-image: url(cage.jpg);
+  background-size: cover;
+  height: 250px;
+  position: sticky;
+  top: 0;
+}
+
+.housing-banner h2 {
+  color: rgba(63, 73, 85);
+  background-color:rgba(241, 241, 241, 0.450) ;
+  text-shadow: 2px 1px 2px white;
+  text-transform: uppercase;
+  letter-spacing: 1.5em;
+  border: 5px solid white;
+  padding: 50px;
+  position: relative;
+  top: 70px;
+  width: 390px;
+  margin: 0 auto;
+  grid-area: banner;
+}
+
+.housing-text p {
+  text-align: justify;
+  grid-area: text;
+}
+
+/* food.html*/
+
+.food-banner {
+  background-image: url('https://www.futterkraemerei.com/images/product_images/popup_images/337_0.jpg');
+  background-size: cover;
+  height: 250px;
+  position: sticky;
+  top: 0;
+}
+
+.food-banner h2 {
+  color: rgba(63, 73, 85);
+  background-color:rgba(241, 241, 241, 0.450) ;
+  text-shadow: 2px 1px 2px white;
+  text-transform: uppercase;
+  letter-spacing: 1.5em;
+  border: 5px solid white;
+  padding: 50px;
+  position: relative;
+  top: 70px;
+  width: 270px;
+  margin: 0 auto;
+  grid-area: banner;
+}
+
+.food-text p {
+  text-align: justify;
+  grid-area: text;
 }

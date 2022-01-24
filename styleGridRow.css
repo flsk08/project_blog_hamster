@@ -127,8 +127,9 @@
 
   .footer a {
     text-decoration: none;
-    color:rgba(62, 112, 187, 0.932)
+    color:rgba(62, 112, 187, 0.932);
   }
+
   #inner-grid {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -136,6 +137,41 @@
     gap: 20px;
     
   }
+
+  
+  #housing-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "banner"
+    "text";
+  }
+
+  #housing {
+    background-image: url(cage.jpg);
+    background-size: cover;
+    height: 250px;
+    position: sticky;
+    top: 0;
+  }
+
+  #housing h2 {
+    text-transform: uppercase;
+    letter-spacing: 1.5em;
+    border: 3px solid white;
+    padding: 50px;
+    position: relative;
+    top: 70px;
+    width: 390px;
+    margin: 0 auto;
+    grid-area: banner;
+}
+
+#text p {
+  text-align: justify;
+  grid-area: text;
+}
 
 nav,
 nav a {

@@ -149,6 +149,10 @@ nav a {
     padding: 20px;
 }
 
+nav li {
+  display: inline-block;
+}
+
 nav a:hover {
   background-color:rgba(62, 112, 187, 0.288);
 }
